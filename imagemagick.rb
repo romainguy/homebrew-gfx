@@ -69,7 +69,7 @@ class Imagemagick < Formula
         "--with-gslib",
         "--with-gs-font-dir=#{HOMEBREW_PREFIX}/share/ghostscript/fonts",
         "--with-lqr",
-        "--with-fftw=yes",
+        "--with-fftw",
         "--without-pango",
         "--without-wmf",
         "--enable-openmp",
@@ -79,7 +79,6 @@ class Imagemagick < Formula
       ]
   
       args << "--without-x" if OS.mac?
-      args << "fftw"
   
       # versioned stuff in main tree is pointless for us
       inreplace "configure", "${PACKAGE_NAME}-${PACKAGE_BASE_VERSION}", "${PACKAGE_NAME}"
