@@ -69,7 +69,7 @@ class Imagemagick < Formula
         "--with-gslib",
         "--with-gs-font-dir=#{HOMEBREW_PREFIX}/share/ghostscript/fonts",
         "--with-lqr",
-        "--with-fftw",
+        "--with-fftw=yes",
         "--without-pango",
         "--without-wmf",
         "--enable-openmp",
