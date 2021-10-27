@@ -79,6 +79,7 @@ class Imagemagick < Formula
       ]
   
       args << "--without-x" if OS.mac?
+      args << "fftw"
   
       # versioned stuff in main tree is pointless for us
       inreplace "configure", "${PACKAGE_NAME}-${PACKAGE_BASE_VERSION}", "${PACKAGE_NAME}"
